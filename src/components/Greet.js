@@ -1,8 +1,12 @@
 import React from 'react';
 
-function Greet() {
+const Greet = props => {
     return (
-        <p>hello world</p>
+        <div>
+            <p>hello world {props.name} </p>
+            {props.children}
+        </div>
+
     );
 }
 
