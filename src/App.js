@@ -15,29 +15,45 @@ import NameList from './components/NameList';
 import Stylesheet from './components/Stylesheet';
 import Inline from './components/Inline';
 import LifeCycleA from './components/LifeCycleA';
-
-function App() {
-  return (
-    <div className="App">
-      <LifeCycleA />
-      {/* <Inline /> */}
-      {/* <Stylesheet primary={true} /> */}
-      {/* <NameList /> */}
-      {/* <UserGreeting /> */}
-      {/* <ParentComponent /> */}
-      {/* <FunctionClick />
-      <ClassClick /> */}
-      {/* <EventBind /> */}
-      {/* <Counter />
-      <Message /> */}
-      {/* <Greet name="Sanju">
-        <p>My age is 23</p>
-      </Greet>
-      <Greet name="Dilshan" />
-      <Welcome name="Kamal" /> */}
-      {/* <Hello/> */}
-    </div>
-  );
-}
+import Header from "./components/Routes/Header";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import ErrorPage from "./pages/404Page";
+import HomePage from "./pages/Homepage";
+import SubPage from "./pages/SubPage";
 
 export default App;
+
+function App() {
+    return (
+        <BrowserRouter basename='/develop'>
+            <div className="main-header">
+                <Header/>
+            </div>
+            <Switch>
+                <Route path="/" component={HomePage} exact/>
+                <Route path="/sub" component={SubPage}/>
+                <Route path="/error" component={ErrorPage}/>
+            </Switch>
+        </BrowserRouter>
+
+        // <div className="App">
+        //   <LifeCycleA />
+        //   {/* <Inline /> */}
+        //   {/* <Stylesheet primary={true} /> */}
+        //   {/* <NameList /> */}
+        //   {/* <UserGreeting /> */}
+        //   {/* <ParentComponent /> */}
+        //   {/* <FunctionClick />
+        //   <ClassClick /> */}
+        //   {/* <EventBind /> */}
+        //   {/* <Counter />
+        //   <Message /> */}
+        //   {/* <Greet name="Sanju">
+        //     <p>My age is 23</p>
+        //   </Greet>
+        //   <Greet name="Dilshan" />
+        //   <Welcome name="Kamal" /> */}
+        //   {/* <Hello/> */}
+        // </div>
+    );
+}
