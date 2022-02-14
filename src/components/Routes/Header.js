@@ -13,7 +13,7 @@ const Header = () => {
                     <Link to='/sub'>Sub Page</Link>
                 </li>
                 <li>
-                    <Link to='/error'>Error</Link>
+                    <Link to='/post'>Post</Link>
                 </li>
             </ul>
         </>
