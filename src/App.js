@@ -21,6 +21,7 @@ import ErrorPage from "./pages/404Page";
 import HomePage from "./pages/Homepage";
 import SubPage from "./pages/SubPage";
 import Post from "./pages/Post";
+import PostForm from "./api/PostForm";
 
 export default App;
 
@@ -39,6 +40,7 @@ function App() {
             <Switch>
                 <Route path="/" component={HomePage} exact/>
                 <Route path="/post/:id" component={Post}/>
+                <Route path="/form" component={PostForm}/>
                 <Route path="/sub">
                     <SubPage login={login}/>
                 </Route>
