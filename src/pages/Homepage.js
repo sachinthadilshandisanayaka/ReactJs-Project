@@ -1,5 +1,5 @@
 import React from "react";
-import DataListComponent from "./DataListComponent";
+import DataListComponent from "../api/DataListComponent";
 
 const HomePage = () => {
     return (

@@ -2,13 +2,12 @@ import React from 'react'
 
 function FunctionClick() {
 
-    function opectionFunction() {
-
+    function operationFunction() {
     }
 
     return (
         <div>
-            <button onClick={opectionFunction}>Click</button>
+            <button onClick={operationFunction}>Click</button>
         </div>
     )
 }

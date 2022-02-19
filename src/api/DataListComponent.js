@@ -24,9 +24,9 @@ class DataListComponent extends Component {
         const {posts} = this.state
         return (
             <div>
-                <h1>
+                <h3>
                     List of Data
-                </h1>
+                </h3>
                 <div>
                     {
                         posts.map(post =>
