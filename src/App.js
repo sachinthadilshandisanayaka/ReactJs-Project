@@ -22,6 +22,7 @@ import HomePage from "./pages/Homepage";
 import SubPage from "./pages/SubPage";
 import Post from "./pages/Post";
 import PostForm from "./api/PostForm";
+import Login from "./pages/Login";
 
 export default App;
 
@@ -44,6 +45,7 @@ function App() {
                 <Route path="/sub">
                     <SubPage login={login}/>
                 </Route>
+                <Route path="/login" component={Login}/>
                 <Route component={ErrorPage}/>
             </Switch>
             {/*<LifeCycleA />*/}
