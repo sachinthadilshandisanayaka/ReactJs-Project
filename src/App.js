@@ -23,6 +23,7 @@ import SubPage from "./pages/SubPage";
 import Post from "./pages/Post";
 import PostForm from "./api/PostForm";
 import Login from "./pages/Login";
+import ClassCounter from "./components/hooks/ClassCounter";
 
 export default App;
 
@@ -37,6 +38,7 @@ function App() {
                         login ? 'Log Out' : 'Log In'
                     }
                 </button>
+                <ClassCounter/>
             </div>
             <Switch>
                 <Route path="/" component={HomePage} exact/>
