@@ -16,7 +16,7 @@ class DataListComponent extends Component {
                 this.setState({
                     posts: resp.data
                 });
-                console.log(resp.data);
+                // console.log(resp.data);
             });
     }
 
