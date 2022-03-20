@@ -26,6 +26,7 @@ import Login from "./pages/Login";
 import ClassCounter from "./components/hooks/ClassCounter";
 import HookCounter from "./components/hooks/HookCounter";
 import HookCounterTwo from "./components/hooks/HookCounterTwo";
+import HookCounterThree from "./components/hooks/HookCounterThree";
 
 export default App;
 
@@ -44,6 +45,7 @@ function App() {
                 <br/>
                 <HookCounter/>
                 <HookCounterTwo />
+                <HookCounterThree />
             </div>
             <Switch>
                 <Route path="/" component={HomePage} exact/>
