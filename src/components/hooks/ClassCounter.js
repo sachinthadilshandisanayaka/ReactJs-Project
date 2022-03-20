@@ -16,6 +16,14 @@ export class ClassCounter extends Component {
             count: this.state.count + 1
         })
     }
+    //method
+    incrementCountPrevState = () => {
+        this.setState(prevState => {
+            return {
+                count: prevState.count + 1
+            }
+        })
+    }
 
     addName = () => {
         this.setState({
